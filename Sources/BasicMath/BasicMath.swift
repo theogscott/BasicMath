@@ -2,10 +2,10 @@
 // https://docs.swift.org/swift-book
 
 
-public struct BasicMath {
+ open class BasicMath {
     // MARK: - Public stored properties
-    public var x: Int
-    public var y: Int
+    public var x: Int = 0
+    public var y: Int = 0
     
     // MARK: - Public initializer
     /// Creates a new `BasicMath` instance.
@@ -21,17 +21,17 @@ public struct BasicMath {
     // MARK: - Public API
     
     /// Returns `x + y`.
-    public func sum() -> Int {
+    open func sum() -> Int {
         return x + y
     }
     
     /// Returns `x - y`.
-    public func difference() -> Int {
+    open func difference() -> Int {
         return x - y
     }
     
     /// Returns `x * y`.
-    public func product() -> Int {
+    open func product() -> Int {
         return x * y
     }
 }
